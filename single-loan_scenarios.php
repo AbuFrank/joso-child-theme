@@ -49,6 +49,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 						<p><?php echo $business_story ?></p>
 						<div><?php echo $closing_highlights ?></div>
 						<div><?php echo wp_get_attachment_image($loan_program_icon, $size) ?><?php echo $loan_program_details ?></div>
+						Testing
 					</article>
 					<?php endwhile; // End of the loop. ?>
 
