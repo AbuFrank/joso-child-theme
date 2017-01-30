@@ -53,6 +53,20 @@ function create_custom_post_types(){
       'slug' => 'loan-scenarios'
       ),
     )      
+  );
+
+  register_post_type('loan_types', 
+    array(
+    'labels' => array(
+      'name' => __('Loan Types'),
+      'singular_name' => __('Loan Type'),
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array (
+      'slug' => 'loan-types'
+      ),
+    )      
   );    
 }
 
