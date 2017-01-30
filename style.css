@@ -13,4 +13,60 @@
 /* Add your custom css below
 -------------------------------------------------------------- */
 
-@import url('../onepress/style.css')
+/*@import url('../onepress/style.css')*/
+
+/*General styles*/
+.ls-header {
+	font-family: "Rockwell", Georgia, Times, "Times New Roman", serif;
+	color: #2A3132;
+}
+
+/*header#masthead.site-header {
+	background-color: #841F27;
+}*/
+
+h1.ls-header {
+	text-align: center;
+}
+
+.site-branding a.site-text-logo {
+	color: #841F27;
+	font-size: 30px;
+	font-family: "Rockwell", Georgia, Times, "Times New Roman", serif;
+}
+/*Single loan scenario styling*/
+#content {
+	background-color: #F4EEE1; 
+}
+.loan-scenario {
+	padding: 3em;
+	font-size: 17px;
+	color: #2A3132;
+}
+#story{
+	width: 320px;
+	float: left;
+	margin-right: 10%;
+}
+#closing-highlights{
+	float: left;
+}
+
+.clear {
+	clear: left;
+}
+.loan-program-details {
+	float: left;
+}
+.loan-program-icon img {
+	border-radius: 50%;
+	float: left;
+	margin-right: 20%;
+	padding-bottom: 20px;
+}
+
+.ls-buttons {
+ position: relative;
+ left: 0;
+ right: 0;
+}

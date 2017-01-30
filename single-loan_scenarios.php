@@ -16,12 +16,6 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 
 	<div id="content" class="site-content">
 
-		<div class="page-header">
-			<div class="container">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			</div>
-		</div>
-
 		<?php echo onepress_breadcrumb(); ?>
 
 		<div id="content-inside" class="container <?php echo esc_attr( $layout ); ?>">
@@ -38,17 +32,32 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 							$closing_highlights = get_field('closing_highlights');
 							$loan_program_details = get_field('loan_program_details');
 							$loan_program_icon = get_field('loan_program_icon');
-							$size = "large";
 						?>
 
 
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
+						<h1 class="ls-header">Loan Scenario</h1>
 					<article class="loan-scenario">
-						<h2><?php echo $business_type; ?> <?php echo $loan_type; ?> <?php echo $loan_rate ?></h2>
-						<div><?php echo wp_get_attachment_image($featured_image, $size) ?></div>
-						<p><?php echo $business_story ?></p>
-						<div><?php echo $closing_highlights ?></div>
-						<div><?php echo wp_get_attachment_image($loan_program_icon, $size) ?><?php echo $loan_program_details ?></div>
+						<!-- Title and image section -->
+						<h2 class="ls-header">Family owned <?php echo $business_type; ?> gets a <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h2>
+						<div><?php echo wp_get_attachment_image($featured_image, "full") ?></div>
+
+						<!-- Business story and closing highlights section -->
+						<p id="story"><?php echo $business_story ?></p>
+						<h3 class="ls-header">Closing Highlights</h3>
+						<div id="closing-highlights"><?php echo $closing_highlights ?></div>
+						
+						<!-- Loan program section -->
+						<div .class="clear">
+							<div> 
+							<h2 class="ls-header">Loan Program</h2>
+								<span class="loan-program-icon"><?php echo wp_get_attachment_image($loan_program_icon, "thumbnail") ?></span><span class="loan-program-details"><?php echo $loan_program_details ?></span>
+							</div>
+						</div>
+						<div class="clear ls-buttons">
+							<button class="button-apply-now">Apply Now</button>
+							<button class="button-first-step">Take the First Step</button>
+						</div>
 					</article>
 					<?php endwhile; // End of the loop. ?>
 
