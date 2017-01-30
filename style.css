@@ -13,4 +13,13 @@
 /* Add your custom css below
 -------------------------------------------------------------- */
 
+.loan-icon {
+	width: 25%;
+}
+
+.loan-type-content {
+	width: 75%;
+}
+
 @import url('../onepress/style.css')
+

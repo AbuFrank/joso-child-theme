@@ -39,9 +39,9 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 
 						<article class = "loan-type">
 							<?php if ($count % 2 == 0) { ?>
-								<span class = "loan-icon"><?php echo $icon ?></span>
+								<span style = "background-color: red" class = "loan-icon"><?php echo $icon ?></span>
 								<span class = "loan-type-content">
-									<h2 class = "loan-type-heading"><?php echo $type ?></h2>
+									<h2 style = "background-color: red" class = "loan-type-heading"><?php echo $type ?></h2>
 									<p class = "loan-type-description"><?php echo $descr ?></p>
 								</span>
 							<?php } else { ?>
@@ -49,7 +49,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 									<h2 class = "loan-type-heading"><?php echo $type ?></h2>
 									<p class = "loan-type-description"><?php echo $descr ?></p>
 								</span>
-								<span class = "loan-icon"><?php echo $icon ?></span> 
+								<span class = "loan-type-icon"><?php echo $icon ?></span> 
 							<?php } ?>
 						</article>
 
