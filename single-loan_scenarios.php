@@ -33,30 +33,36 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 							$loan_program_details = get_field('loan_program_details');
 							$loan_program_icon = get_field('loan_program_icon');
 						?>
-
+					<div class="page-header">
+						<div class="container">
+							<?php the_title( '<h1 class="mod-header">', '</h1>' ); ?>
+						</div>
+					</div>
 
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
-						<h1 class="ls-header">Loan Scenario</h1>
+<!-- 						<h1 class="mod-header" style="text-align: center">Loan Scenario</h1>
+ -->					
 					<article class="loan-scenario">
-						<!-- Title and image section -->
-						<h2 class="ls-header">Family owned <?php echo $business_type; ?> gets a <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h2>
-						<div><?php echo wp_get_attachment_image($featured_image, "full") ?></div>
+						<?php echo wp_get_attachment_image($featured_image, "full") ?>
 
 						<!-- Business story and closing highlights section -->
-						<p id="story"><?php echo $business_story ?></p>
-						<h3 class="ls-header">Closing Highlights</h3>
-						<div id="closing-highlights"><?php echo $closing_highlights ?></div>
+						<div> 
+							<h3 class="mod-header">Family owned <?php echo $business_type; ?> gets an<?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3>
+							<div id="story"><?php echo $business_story ?></div>
+							<h2 class="mod-header">Closing Highlights</h2>
+							<div id="closing-highlights"><?php echo $closing_highlights ?></div>
+						</div>
 						
 						<!-- Loan program section -->
-						<div .class="clear">
+						<div class="clear">
 							<div> 
-							<h2 class="ls-header">Loan Program</h2>
+							<h2 class="mod-header">Loan Program</h2>
 								<span class="loan-program-icon"><?php echo wp_get_attachment_image($loan_program_icon, "thumbnail") ?></span><span class="loan-program-details"><?php echo $loan_program_details ?></span>
 							</div>
 						</div>
 						<div class="clear ls-buttons">
-							<button class="button-apply-now">Apply Now</button>
-							<button class="button-first-step">Take the First Step</button>
+							<button class="apply-now">Apply Now</button>
+							<button class="first-step">Take the First Step</button>
 						</div>
 					</article>
 					<?php endwhile; // End of the loop. ?>

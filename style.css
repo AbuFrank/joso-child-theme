@@ -13,51 +13,225 @@
 /* Add your custom css below
 -------------------------------------------------------------- */
 
-/*@import url('../onepress/style.css')*/
+/*---------------------
+    Add Google Fonts 
+----------------------*/
+<link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Arimo">
 
-/*General styles*/
-.ls-header {
-	font-family: "Rockwell", Georgia, Times, "Times New Roman", serif;
-	color: #2A3132;
+/*---------------------
+    HTML Elements 
+----------------------*/
+article.loan-scenario {
+	margin: 0;
+	padding: 0;
+}
+/*------------------------------
+	2.3 Heading
+------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	margin-bottom: 15px;
+	margin-bottom: 15px;
+	margin-bottom: 0.9375rem;
+	margin-top: 0;
+	color: #333333;
 }
 
-/*header#masthead.site-header {
-	background-color: #841F27;
-}*/
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: #333333;
+	text-decoration: none;
+}
 
-h1.ls-header {
+h1 {
+	line-height: 1.3;
+	font-size: 33px;
+	font-size: 2.0625rem;
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 40px;
+		font-size: 2.5rem;
+	}
+}
+
+h1 span {
+	font-weight: bold;
+}
+
+h2 {
+	line-height: 1.2;
+	font-size: 25px;
+	font-size: 1.5625rem;
+}
+
+@media (min-width: 768px) {
+	h2 {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 17px;
+	font-size: 1.0625rem;
+	margin-bottom: 12px;
+}
+
+h5 {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-weight: 700;
+}
+
+h6 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+}
+
+/*------------------
+   Content styling
+-------------------*/
+.mod-header {
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	text-align: center;
+  color: #00293C;
+}
+
+.center-text {
 	text-align: center;
 }
 
 .site-branding a.site-text-logo {
-	color: #841F27;
+	color: #5E0001;
 	font-size: 30px;
-	font-family: "Rockwell", Georgia, Times, "Times New Roman", serif;
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 }
-/*Single loan scenario styling*/
+
+div.page-header {
+	padding: 20px 0px;
+	background: #FFFFFB;	
+  border: .5px solid #aaa;
+	box-shadow: 3.5px 3.5px 2px #aaa;
+}
+
+.page-header .entry-title, .page-header .page-title {
+	margin-bottom: 0px;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.page-header p {
+	margin: 6px 0px 0px 0px;
+}
+
+div#secondary.widget-area.sidebar {
+	background-color: #FFFFFB;
+  border: .5px solid #aaa;
+  padding-right: 40px;
+  margin-top: 40px;
+  color: #00293C;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+;
+
+}
+
+
+/*-----------
+   Buttons
+------------*/
+
+.apply-now {
+	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: 450;
+	margin-right: 60px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #a12727;
+  border-radius: 53px;
+  background: #F4EEE1;
+  color: #F4EEE1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
+}
+
+.first-step {
+	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: 450;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #a12727;
+  border-radius: 53px;
+  background: #F4EEE1;
+  color: #F4EEE1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
+}
+
+.ls-buttons {
+	text-align: center;
+	margin-top: 50px;
+}
+/*-------------------------------
+   Single loan scenario styling
+--------------------------------*/
 #content {
 	background-color: #F4EEE1; 
 }
 .loan-scenario {
-	padding: 3em;
-	font-size: 17px;
+  background-color: #FFFFFB;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  font-size: 17px;
 	color: #2A3132;
-}
-#story{
-	width: 320px;
-	float: left;
-	margin-right: 10%;
-}
-#closing-highlights{
-	float: left;
+  border: .5px solid #aaa;
+	box-shadow: 3.5px 3.5px 2px #aaa;
+  padding: 2em;
+	margin-top: 0;
 }
 
+#story {
+	margin-top: 1em;
+}
 .clear {
 	clear: left;
 }
 .loan-program-details {
 	float: left;
 }
+.loan-program-details ul li {
+		list-style: none;
+}
+
 .loan-program-icon img {
 	border-radius: 50%;
 	float: left;
@@ -70,3 +244,7 @@ h1.ls-header {
  left: 0;
  right: 0;
 }
+
+div.nf-form-content {
+	width: 65%;
+margin: auto;}
