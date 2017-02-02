@@ -37,20 +37,23 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 
-						<article class = "loan-type">
-							<?php if ($count % 2 == 0) { ?>
-								<span style = "background-color: red" class = "loan-icon"><?php echo $icon ?></span>
-								<span class = "loan-type-content">
-									<h2 style = "background-color: red" class = "loan-type-heading"><?php echo $type ?></h2>
-									<p class = "loan-type-description"><?php echo $descr ?></p>
-								</span>
-							<?php } else { ?>
-								<span class = "loan-type-content">
-									<h2 class = "loan-type-heading"><?php echo $type ?></h2>
-									<p class = "loan-type-description"><?php echo $descr ?></p>
-								</span>
-								<span class = "loan-type-icon"><?php echo $icon ?></span> 
-							<?php } ?>
+						<article>
+								<div class = "loan-type wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
+									<?php if ($count % 2 == 0) { ?>
+										<div class = "loan-type-media icon-left">
+									<?php } else { ?>
+										<div class = "loan-type-media icon-right">
+									<?php } ?>
+										<span class = "fa-stack fa-5x">
+											<i class="fa fa-circle fa-stack-2x loan-type-icon-background"></i>
+											<?php  echo $icon ?>
+										</span>
+									</div>
+									<div class = "loan-type-content">
+										<h2><?php echo $type ?></h2>
+										<p class = "text-stuff"><?php echo $descr ?></p>
+									</div>
+								</div>
 						</article>
 
 						<?php $count++; ?>
