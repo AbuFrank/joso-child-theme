@@ -175,9 +175,9 @@ div#secondary.widget-area.sidebar {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding: 12px 24px;
+  padding: 7px 10px;
   border: 1px solid #a12727;
-  border-radius: 53px;
+  border-radius: 5px;
   background: #F4EEE1;
   color: #F4EEE1;
   background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
@@ -192,7 +192,7 @@ div#secondary.widget-area.sidebar {
   vertical-align: middle;
   padding: 12px 24px;
   border: 1px solid #a12727;
-  border-radius: 53px;
+  border-radius: 5px;
   background: #F4EEE1;
   color: #F4EEE1;
   background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
@@ -225,6 +225,20 @@ div#secondary.widget-area.sidebar {
 .clear {
 	clear: left;
 }
+
+#closing-highlights ul li {
+	list-style: none;
+}
+
+#closing-highlights ul li:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "\f05d";
+	font-family: "FontAwesome";
+	color: #000000;
+}
+
 .loan-program-details {
 	float: left;
 }
