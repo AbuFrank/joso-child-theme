@@ -206,7 +206,15 @@ div#secondary.widget-area.sidebar {
    Single loan scenario styling
 --------------------------------*/
 #content {
-	background-color: #F4EEE1; 
+
+
+
+	/*========================================================
+ 	This pattern is downloaded from www.subtlepatterns.com 
+ 	If you need more, that's where to get'em.
+ 	========================================================*/
+	background-image: url('../../uploads/2017/01/sayagata-400px.png');
+
 }
 .loan-scenario {
   background-color: #FFFFFB;
@@ -253,6 +261,7 @@ margin: auto;}
 /*-------------------------------
    RT Edits
 --------------------------------*/
+
 /*----------------------------------------------*/
 /*------------------------------
 	0.1 Loan Types Page
