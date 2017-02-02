@@ -1,0 +1,72 @@
+<?php
+/**
+ * The template for displaying Closings.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package OnePress
+ */
+
+get_header();
+
+$layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
+?>
+
+	<div id="content" class="site-content">
+ 
+<!-- 		<div class="page-header">
+			<div class="container">
+				<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+		</div>
+ -->
+		<?php echo onepress_breadcrumb(); ?>
+
+		<div id="content-inside" class="container">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
+
+					<?php $count = 0; ?>
+					<?php while ( have_posts() ) : the_post(); 
+						// Add variables for ACF 'Loan Types'
+						$image = get_field('image');
+						$name = get_field('name');
+						$loan_type = get_field('loan_type');
+						$amount = get_field('amount');
+						$location = get_field('location')
+					  ?>
+
+						<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+
+						<div class = "closing wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
+							<h2>
+								<?php echo $name ?>
+							</h2>
+							<div class = "close-image">
+								<?php echo $image ?>
+							</div>
+							<div class = "close-info">
+								<ul>
+									<li>
+										<?php echo $amount ?>
+									</li>
+									<li>
+										<?php echo $location ?>
+									</li>
+									<li>
+										<?php echo $loan_type ?>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					<?php endwhile; // End of the loop. ?>
+
+				</main><!-- #main -->
+			</div><!-- #primary -->
+
+		</div><!--#content-inside -->
+	</div><!-- #content -->
+
+<?php get_footer(); ?>
