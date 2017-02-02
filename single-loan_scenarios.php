@@ -62,7 +62,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 						</div>
 						<div class="clear ls-buttons">
 							<button class="apply-now">Apply Now</button>
-							<button class="first-step">Take the First Step</button>
+							<button class="first-step">Take the First&nbsp;Step</button>
 						</div>
 					</article>
 					<?php endwhile; // End of the loop. ?>
