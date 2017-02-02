@@ -168,35 +168,36 @@ div#secondary.widget-area.sidebar {
 ------------*/
 
 .apply-now {
-	font-family: "Arimo", Helvetica, Arial, sans-serif;
-	font-size: 26px;
-	font-weight: 450;
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	font-size: 30px;
+	font-weight: 500;
 	margin-right: 60px; 
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding: 7px 10px;
-  border: 1px solid #a12727;
-  border-radius: 5px;
-  background: #F4EEE1;
-  color: #F4EEE1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
+  padding: 12px 30px;
+  border: 1px solid #5E0001;
+  border-radius: 10px;
+  color: #FFEFEC;
+	background-color: #5E0001;
+	box-shadow: inset 0px 0px 50px #AB4D4E;
 }
 
 .first-step {
-	font-family: "Arimo", Helvetica, Arial, sans-serif;
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 	font-size: 26px;
-	font-weight: 450;
+	font-weight: 700;
+	margin-right: 60px; 
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding: 12px 24px;
-  border: 1px solid #a12727;
-  border-radius: 5px;
-  background: #F4EEE1;
-  color: #F4EEE1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#912C34), to(#5E0001));
-}
+  padding: 15px 30px;
+  border: 1px solid #00293C;
+  border-radius: 10px;
+  color: #5E0001;
+  background-color: #F6FFFF;
+ 	box-shadow: inset 0px 0px 30px #00293C;
+*/}
 
 .ls-buttons {
 	text-align: center;
@@ -213,7 +214,7 @@ div#secondary.widget-area.sidebar {
  	This pattern is downloaded from www.subtlepatterns.com 
  	If you need more, that's where to get'em.
  	========================================================*/
-	background-image: url('../../uploads/2017/01/sayagata-400px.png');
+	background-image: url('http://localhost:8888/joso/wp-content/uploads/2017/02/sayagata-400px.png');
 
 }
 .loan-scenario {
@@ -222,7 +223,7 @@ div#secondary.widget-area.sidebar {
   font-size: 17px;
 	color: #2A3132;
   border: .5px solid #aaa;
-	box-shadow: 3.5px 3.5px 2px #aaa;
+	box-shadow: 4px 4px 20px #aaa;
   padding: 2em;
 	margin-top: 0;
 }
