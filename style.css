@@ -206,7 +206,15 @@ div#secondary.widget-area.sidebar {
    Single loan scenario styling
 --------------------------------*/
 #content {
-	background-color: #F4EEE1; 
+
+
+
+	/*========================================================
+ 	This pattern is downloaded from www.subtlepatterns.com 
+ 	If you need more, that's where to get'em.
+ 	========================================================*/
+	background-image: url('../../uploads/2017/01/sayagata-400px.png');
+
 }
 .loan-scenario {
   background-color: #FFFFFB;
@@ -262,3 +270,77 @@ div#secondary.widget-area.sidebar {
 div.nf-form-content {
 	width: 65%;
 margin: auto;}
+
+
+/*-------------------------------
+   RT Edits
+--------------------------------*/
+
+/*----------------------------------------------*/
+/*------------------------------
+	0.1 Loan Types Page
+------------------------------*/
+
+
+.loan-type-icon {
+	color: #fff;
+}
+
+.loan-type-content {
+	text-align: center;
+}
+
+.loan-type-media .fa-5x {
+		font-size: 4em;
+}
+
+.loan-type-icon-background {
+		color: #03c4eb;
+}
+
+
+@media (max-width: 543px) {
+
+	.loan-type-media {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	
+	.loan-type-content {
+		margin: auto;
+	}
+}
+
+@media (min-width: 544px){
+
+	.loan-type {
+		display: flex;
+		margin: 0 1em;
+	}
+
+	.loan-type-media {
+		display: inline-block;
+	}
+
+	.icon-left {
+		margin: auto 1em auto 0;
+	}
+
+	.loan-type-content {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.text-stuff {
+		text-align: left;
+	}
+
+	.icon-right {
+		order: 2;
+		margin: auto 0 auto 1em;
+	}
+
+
+
+}
