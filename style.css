@@ -22,6 +22,7 @@
 /*---------------------
     HTML Elements 
 ----------------------*/
+
 article.loan-scenario {
 	margin: 0;
 	padding: 0;
@@ -34,6 +35,7 @@ article.loan-scenario {
  	========================================================*/
 	background-image: url('http://localhost:8888/joso/wp-content/uploads/2017/02/sayagata-400px.png');
 }
+
 
 /*------------------------------
 	2.3 Heading
@@ -107,18 +109,101 @@ div.page-header {
 	margin: 6px 0px 0px 0px;
 }
 
+/*----------
+    Blog
+-----------*/
+
+.entry-content h3, 
+h1.entry-title,
+header.entry-header  {
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif !important;
+	color: #00293C;
+}
+.site-main {
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+	color: #00293C;
+}
+
+/*---------------------
+   Forms and Sidebar
+----------------------*/
+
 div#secondary.widget-area.sidebar {
 	background-color: #FFFFFB;
   border: .5px solid #aaa;
   box-shadow: 4px 4px 20px #aaa;
-  padding-right: 40px;
   margin-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
   color: #00293C;
   font-family: "Arimo", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
+.sidebar .widget .widget-title {
+	font-size: 18px !important;
+	text-transform: none !important;
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+  color: #5E0001;
+  padding-left: 5px;
+}
 
+.sidebar .widget {
+	margin-bottom: 18px !important;
+}
+div.textwidget {
+	padding-left: 5px;
+}
+
+/*-----------
+   Forms
+------------*/
+
+div.nf-form-content {
+	width: 95% !important;
+}
+
+.nf-field-label {
+  color: #5E0001;
+}
+
+.nf-error-msg {
+	color: #5E0001 !important;
+	padding-left: 5px;
+}
+
+.field-wrap.submit-wrap input {
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 60px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 15px;
+  border: 1px solid #00293C;
+  border-radius: 10px;
+  color: #FFEFEC;
+  background-color: #00293C;
+ 	box-shadow: inset 0px 0px 20px #335C6F;
+ }
+
+.field-wrap.submit-wrap input:hover {
+	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 60px; 
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 15px;
+  border: 1px solid #00293C;
+  border-radius: 10px;
+  color: #FFEFEC;
+  background-color: #00293C;
+ 	box-shadow: inset 0px 0px 50px #262626;
+}
 /*-----------
    Buttons
 ------------*/
