@@ -206,17 +206,7 @@ div#secondary.widget-area.sidebar {
 /*-------------------------------
    Single loan scenario styling
 --------------------------------*/
-#content {
 
-
-
-	/*========================================================
- 	This pattern is downloaded from www.subtlepatterns.com 
- 	If you need more, that's where to get'em.
- 	========================================================*/
-	background-image: url('http://localhost:8888/joso/wp-content/uploads/2017/02/sayagata-400px.png');
-
-}
 .loan-scenario {
   background-color: #FFFFFB;
   font-family: "Arimo", Helvetica, Arial, sans-serif;
@@ -277,9 +267,34 @@ margin: auto;}
    RT Edits
 --------------------------------*/
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0  Global
+2.0  Loan Types
+3.0  Contact Section
+4.0  
+5.0  
+6.0  
+7.0  
+8.0  
+9.0  
+
+--------------------------------------------------------------*/
+
+
 /*----------------------------------------------*/
+
 /*------------------------------
-	0.1 Loan Types Page
+	1. Global
+------------------------------*/
+
+#content {
+	background-image: url(sayagata-400px.png);
+}
+
+/*------------------------------
+	2. Loan Types Page
 ------------------------------*/
 
 
@@ -292,7 +307,7 @@ margin: auto;}
 }
 
 .loan-type-media .fa-5x {
-		font-size: 4em;
+		/*font-size: 4em;*/
 }
 
 .loan-type-icon-background {
@@ -309,15 +324,15 @@ margin: auto;}
 
 	
 	.loan-type-content {
-		margin: auto;
+		margin: 0 2em;
 	}
 }
 
-@media (min-width: 544px){
+@media (min-width: 544px) {
 
 	.loan-type {
 		display: flex;
-		margin: 0 1em;
+		margin: 0 2em 2em 2em;
 	}
 
 	.loan-type-media {
@@ -325,7 +340,7 @@ margin: auto;}
 	}
 
 	.icon-left {
-		margin: auto 1em auto 0;
+		margin: auto 2em auto 0;
 	}
 
 	.loan-type-content {
@@ -339,9 +354,25 @@ margin: auto;}
 
 	.icon-right {
 		order: 2;
-		margin: auto 0 auto 1em;
+		margin: auto 0 auto 2em;
 	}
 
+}
+
+@media (min-width: 992px) {
+
+	.loan-type-large {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
 
 
+/*------------------------------
+	3.  Contact Form
+------------------------------*/
+.section-contact {
+	background-image: url(sayagata-400px.png);
 }

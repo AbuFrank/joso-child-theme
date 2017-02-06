@@ -9,10 +9,9 @@
 
 get_header();
 
-$layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 ?>
 
-	<div id="content" class="site-content">
+	<!--<div id="content" class="site-content">-->
  
 <!-- 		<div class="page-header">
 			<div class="container">
@@ -23,50 +22,43 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 		<?php echo onepress_breadcrumb(); ?>
 
 		<div id="content-inside" class="container">
-			<div id="primary" class="content-area">
+			
 				<main id="main" class="site-main" role="main">
-
-					<?php $count = 0; ?>
+					<?php $count==0; ?>
 					<?php while ( have_posts() ) : the_post(); 
 						// Add variables for ACF 'Loan Types'
 						$image = get_field('image');
-						$name = get_field('name');
 						$loan_type = get_field('loan_type');
-						$amount = get_field('amount');
+						$loan_rate = get_field('loan_rate');
 						$location = get_field('location')
 					  ?>
 
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-
-						<div class = "closing wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
-							<h2>
-								<?php echo $name ?>
-							</h2>
+						<?php if ($count % 2 == 0) { ?>
+						<article class = "closing-tile left-tile wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
+						<?php } else { ?>
+						<article class = "closing-tile right-tile wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
+						<?php } ?>
+							<?php the_title('<h2 class = "close-name">', '</h1>'); ?>
 							<div class = "close-image">
-								<?php echo $image ?>
+								<?php echo wp_get_attachment_image($image, "medium") ?>
 							</div>
 							<div class = "close-info">
-								<ul>
-									<li>
-										<?php echo $amount ?>
-									</li>
-									<li>
-										<?php echo $location ?>
-									</li>
-									<li>
-										<?php echo $loan_type ?>
-									</li>
-								</ul>
+								<p>
+									<?php echo $loan_rate ?> |
+									<?php echo $location ?> |
+									<?php echo $loan_type ?>
+								</p>
 							</div>
-						</div>
-
+						</article>
+					<?php $count++; ?>
 					<?php endwhile; // End of the loop. ?>
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
 
-		</div><!--#content-inside -->
+		<!--#content-inside -->
 	</div><!-- #content -->
 
 <?php get_footer(); ?>
