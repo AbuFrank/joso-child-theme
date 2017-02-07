@@ -47,7 +47,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 
 						<!-- Business story and closing highlights section -->
 						<div> 
-							<h3 class="mod-header">Family owned <?php echo $business_type; ?> gets an<?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3>
+							<h3 class="mod-header">Family owned <?php echo $business_type; ?> gets an <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3>
 							<div id="story"><?php echo $business_story ?></div>
 							<h2 class="mod-header">Closing Highlights</h2>
 							<div id="closing-highlights"><?php echo $closing_highlights ?></div>
