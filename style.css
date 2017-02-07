@@ -453,33 +453,78 @@ margin: auto;}
 /*------------------------------
 	4.  Closings
 ------------------------------*/
-@media (min-width: 992px){
-	.closings {
+@media (max-width: 769px) {
+	.closings, .close-name, .close-image, .close-info {
+		text-align: center;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 1199px) {
+    
+    .closings {
 		float: left;
 		width: 0%;
 		overflow: auto;
 	}
 
 	.closing-tile {
-		width: 42%;
+		width: 300px;
 		display: inline-block;
 	}
 
 	.left-tile {
 		clear: both;
 		float: left;
-		margin: 0 auto 4em 4em;
+		margin: 0 auto 4em 1em;
 	}
 
 	.right-tile {
 		float: right;
-		margin: 0 4em 4em auto;
+		margin: 0 1em 4em auto;
 	}
 
 	.close-name, .close-image, .close-info {
 		text-align: center;
 	}
 
+
+	.close-info {
+		padding-top: 5px;
+	}	
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.left-tile {
+		margin: 0 auto 4em 5em;
+	}
+
+	.right-tile {
+		margin: 0 5em 4em auto;
+	}
+
+}
+
+@media (min-width: 1200px) {
+   
+  .closings {
+		float: left;
+		width: 0%;
+		overflow: auto;
+	}
+
+	.closing-tile {
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0px 2em 4em 2em;
+	}
+
+	.close-name, .close-image, .close-info {
+		text-align: center;
+	}
 
 	.close-info {
 		padding-top: 5px;
