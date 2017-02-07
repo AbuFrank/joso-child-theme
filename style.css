@@ -1,3 +1,6 @@
+
+@import url("riley.css");
+
 /*
  Theme Name:   OnePress Child
  Theme URI:    https://www.famethemes.com
@@ -20,6 +23,11 @@
   href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Arimo">
 
 /*---------------------
+Individual CSS
+---------------------*/
+
+
+/*---------------------
     HTML Elements 
 ----------------------*/
 
@@ -33,7 +41,7 @@ article.loan-scenario {
  	This pattern is downloaded from www.subtlepatterns.com 
  	If you need more, that's where to get'em.
  	========================================================*/
-	background-image: url('http://localhost:8888/joso/wp-content/uploads/2017/02/sayagata-400px.png');
+	background-image: url('sayagata-400px.png');
 }
 
 
@@ -75,9 +83,10 @@ h6 a {
 /*------------------
    Content styling
 -------------------*/
-header#masthead.site-header {
+
+/*header#masthead.site-header {
 	background-color: rgba(255, 255, 251, .85);
-}
+}*/
 
 
 .center-text {
