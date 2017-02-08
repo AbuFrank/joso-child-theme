@@ -19,8 +19,7 @@
 /*---------------------
     Add Google Fonts 
 ----------------------*/
-<link rel="stylesheet" type="text/css"
-  href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Arimo">
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Arimo");
 
 /*---------------------
 Individual CSS
@@ -161,10 +160,20 @@ div#secondary.widget-area.sidebar {
 .sidebar .widget {
 	margin-bottom: 18px !important;
 }
+
+.right-sidebar .content-area {
+	border-right: none !important;
+}
+
 div.textwidget {
 	padding-left: 5px;
 }
 
+aside#categories-2.widget.widget_categories li.cat-item a,
+aside#archives-2.widget.widget_archive li a {
+  color: #00293C;
+  font-family: "Arimo", Helvetica, Arial, sans-serif;
+  padding-left: 5px;
 /*-----------
    Forms
 ------------*/
@@ -307,6 +316,10 @@ div.nf-form-content {
 	clear: left;
 }
 
+#closing-highlights {
+	margin-left: 8.5%
+}
+
 #closing-highlights ul li {
 	list-style: none;
 }
@@ -332,6 +345,8 @@ div.nf-form-content {
 	float: left;
 	margin-right: 20%;
 	padding-bottom: 20px;
+	padding-bottom: 20px;
+
 }
 
 .ls-buttons {
