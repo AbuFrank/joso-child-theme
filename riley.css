@@ -1,3 +1,69 @@
-header#masthead.site-header {
+/*header#masthead.site-header {
 	background-color: rgba(255, 255, 251, .85);
+}*/
+header.header-fixed {
+	background-color: rgba(255, 255, 251, .85);
+}
+
+
+/*red color for hover over icons in feature section*/
+div.feature-item:hover i.icon-background-default{
+	color: #5E0001;
+}
+
+/*parallax section realign header and image*/
+section#videolightbox.section-padding-larger {
+	padding: 8em 0em 27em 0em;
+}
+
+/*Loan scenarios*/
+main#main article.loan-scenario {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+article.loan-scenario div.scenario-image {
+	text-align: center;
+}
+
+article.loan-scenario img {
+	margin-bottom: 10px;
+}
+
+div.clear button.apply-now {
+	margin-bottom: 10px;
+}
+
+div span.loan-program-details {
+	margin-left: 8.5%;
+	margin-bottom: 2em;
+}
+
+div#closing-highlights {
+	margin-bottom: 2em;
+}
+
+
+/*Front page header - may apply to other pages*/
+@media (max-width: 543px) {
+
+	div.site-brand-inner {
+		width: 330px;
+		float: left;
+	}
+}
+
+@media (max-width: 406px) {
+
+	div.site-brand-inner h1.site-title {
+		word-break: keep-all;
+	}
+
+	div.site-brand-inner h1.site-title a.site-text-logo {
+		font-size: 25px;
+	}
+
+	div.site-brand-inner {
+		width: 230px;
+	}
 }

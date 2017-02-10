@@ -45,7 +45,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 					
 						<!-- Title and image section -->
 						<a href="<?php the_permalink() ?>"><h3 class="mod-header">Family owned <?php echo $business_type; ?> gets a <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3></a>
-						<div><?php echo wp_get_attachment_image($featured_image, "medium") ?></div>
+						<div class="scenario-image"><?php echo wp_get_attachment_image($featured_image, "medium") ?></div>
 
 						<!-- Business story and closing highlights section -->
 						<p id="story"><?php echo $business_story ?></p>

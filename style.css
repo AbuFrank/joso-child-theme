@@ -186,9 +186,9 @@ div.nf-form-content {
   color: #5E0001;
 }
 
-.nf-error-msg {
+/*.nf-error-msg {
 	color: #5E0001 !important;
-	padding-left: 5px;
+	padding-left: 5px;*/
 }
 
 .field-wrap.submit-wrap input {
@@ -395,7 +395,7 @@ margin: auto;}
 ------------------------------*/
 
 
-.loan-type-icon {
+div.loan-type span i.loan-type-icon {
 	color: #fff;
 }
 
@@ -408,7 +408,7 @@ margin: auto;}
 }
 
 .loan-type-icon-background {
-		color: #03c4eb;
+		color: #00293C;
 }
 
 
@@ -477,10 +477,26 @@ margin: auto;}
 /*------------------------------
 	4.  Closings
 ------------------------------*/
+body.post-type-archive-closings {
+	background-image: url('sayagata-400px.png');
+}
+
+body.post-type-archive-closings div#page {
+	background-image: inherit;
+}
+
+body.post-type-archive-closings div div.content-inside {
+	background-image: inherit;
+}
+
 @media (max-width: 769px) {
 	.closings, .close-name, .close-image, .close-info {
 		text-align: center;
 	}
+}
+
+.closing-tile {
+	margin-bottom: 4em
 }
 
 @media (min-width: 770px) and (max-width: 1199px) {
@@ -543,7 +559,7 @@ margin: auto;}
 		width: 300px;
 		display: inline-block;
 		vertical-align: top;
-		margin: 0px 2em 4em 2em;
+		margin: 4em 2em 4em 2em;
 	}
 
 	.close-name, .close-image, .close-info {
