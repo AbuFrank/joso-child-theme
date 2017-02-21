@@ -16,7 +16,7 @@
 /*---------------------
     Add Google Fonts 
 ----------------------*/
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Arimo");
+@import url("https://fonts.googleapis.com/css?family=Libre Baskerville|Arimo");
 
 /*---------------------
     HTML Elements 
@@ -35,12 +35,11 @@ article.loan-scenario {
 	background-image: url('http://localhost:8888/joso/wp-content/uploads/2017/02/sayagata-400px.png');
 }
 
-
 /*------------------------------
 	2.3 Heading
 ------------------------------*/
 .mod-header {
-	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, Times, "Times New Roman", serif;
 	text-align: center;
   color: #00293C;
 }
@@ -83,7 +82,7 @@ h6 a {
    Content styling
 -------------------*/
 header#masthead.site-header {
-	background-color: rgba(255, 255, 251, .85);
+	background-color: rgba(255, 255, 255, .85);
 }
 
 
@@ -98,10 +97,23 @@ header#masthead.site-header {
 }
 
 div.page-header {
-	padding: 20px 0px;
-	background: #FFFFFB;	
-  border: .5px solid #aaa;
+	padding: 5px 0px; 
+	background-color: #FFF;
+	border: .5px solid #aaa;
 	box-shadow: 4px 4px 20px #aaa;
+}
+
+div.page-header a,
+article#loan-scenario-archive a  {
+	text-decoration: none;
+}
+
+div.page-header h2.mod-header.ls-title-header:hover {
+	color: #5E0001;
+}
+
+#ls-page-header {
+	margin-bottom: 1.5em;
 }
 
 .page-header .entry-title, .page-header .page-title {
@@ -123,7 +135,7 @@ div.page-header {
 .entry-content h3, 
 h1.entry-title,
 header.entry-header  {
-	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif !important;
+	font-family: Georgia, Times, "Times New Roman", serif !important;
 	color: #00293C;
 }
 .site-main {
@@ -137,8 +149,10 @@ header.entry-header  {
 ----------------------*/
 
 div#secondary.widget-area.sidebar {
-	background-color: #FFFFFB;
-  border: .5px solid #aaa;
+/*	background-color: #FFFFFB;
+*/  
+	background-color: #FFF;
+	border: .5px solid #aaa;
   box-shadow: 4px 4px 20px #aaa;
   margin-top: 40px;
   padding-right: 20px;
@@ -152,7 +166,7 @@ div#secondary.widget-area.sidebar {
 .sidebar .widget .widget-title {
 	font-size: 18px !important;
 	text-transform: none !important;
-	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, Times, "Times New Roman", serif;
   color: #5E0001;
   padding-left: 5px;
 }
@@ -228,7 +242,7 @@ div.nf-form-content {
    Buttons
 ------------*/
 
-.apply-now {
+.apply-now, .referral-program-button {
 	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -239,7 +253,7 @@ div.nf-form-content {
   padding: 10px 20px;
   border: 1px solid #5E0001;
   border-radius: 10px;
-  color: #FFEFEC;
+  color: #FFF;
 	background-color: #5E0001;
 	box-shadow: inset 0px 0px 50px #AB4D4E;
 }
@@ -255,12 +269,12 @@ div.nf-form-content {
   padding: 10px 20px;
   border: 1px solid #00293C;
   border-radius: 10px;
-  color: #FFEFEC;
+  color: #FFF;
   background-color: #00293C;
  	box-shadow: inset 0px 0px 30px #335C6F;
 }
 
-.apply-now:hover, .apply-now:active {
+.apply-now:hover, .apply-now:active, .referral-program-button:hover {
 	font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -271,7 +285,7 @@ div.nf-form-content {
   padding: 10px 20px;
   border: 1px solid #450000;
   border-radius: 10px;
-  color: #FFEFEC;
+  color: #FFF;
 	background-color: #5E0001;
  	box-shadow: inset 0px 0px 40px #450000;
 }
@@ -287,7 +301,7 @@ div.nf-form-content {
   padding: 10px 20px;
   border: 1px solid #00293C;
   border-radius: 10px;
-  color: #FFEFEC;
+  color: #FFF;
   background-color: #00293C;
  	box-shadow: inset 0px 0px 50px #262626;
 }
@@ -300,9 +314,11 @@ div.nf-form-content {
    Single loan scenario styling
 --------------------------------*/
 
-article.loan-scenario {
-  background-color: #FFFFFB;
-  font-family: "Arimo", Helvetica, Arial, sans-serif;
+article.loan-scenario, article#loan-scenario-archive {
+/*  background-color: #FFFFFB;
+*/
+	background-color: #FFF;
+	font-family: "Arimo", Helvetica, Arial, sans-serif;
   font-size: 17px;
 	color: #2A3132;
   border: .5px solid #aaa;
@@ -310,13 +326,39 @@ article.loan-scenario {
   padding: 2em;
 	margin-top: 0;
 }
-/*#ls-image-title {
-	margin-top: 1em;
+
+#loan-scenario-archive {
+	margin-bottom: 3em;
 }
-*/
+
+#loan-scenario-archive h3.mod-header {
+	margin-top: -.5em;
+	margin-bottom: 1.25em;
+}
+
+.mod-header.ls-title-header {
+	font-size: 2.25em;
+	padding-bottom: .47em;
+}
+
 #story {
 	margin-top: 1em;
 }
+
+#closing-title-archive {
+	clear: left;
+	padding-top: 1em;
+}
+
+div#story-archive {
+	width: 50%;
+	padding-left: 2.25em;
+	float: left;
+}
+div#photo-archive {
+	float: left;
+}
+
 .clear {
 	clear: left;
 }
@@ -328,13 +370,13 @@ article.loan-scenario {
 	list-style: none;
 }
 
-#closing-highlights ul li:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "\f05d";
+#closing-highlights ul li:before,
+.loan-program-details ul li:before {
+	content: "\f058";
 	font-family: "FontAwesome";
-	color: #000000;
+	font-size: .8em;
+	color: #00293C;
+	margin-right: .5em;
 }
 
 .loan-program-details {
@@ -361,14 +403,13 @@ article.loan-scenario {
 
 div.nf-form-content {
 	width: 65%;
-margin: auto;}
+	margin: auto;}
 
 
-/*-------------------------------
-   RT Edits
---------------------------------*/
+																					/*-------------------------------
+																					   RT Edits
+																					--------------------------------*/
 
-/*----------------------------------------------*/
 /*------------------------------
 	0.1 Loan Types Page
 ------------------------------*/
