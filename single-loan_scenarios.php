@@ -33,15 +33,14 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 							$loan_program_details = get_field('loan_program_details');
 							$loan_program_icon = get_field('loan_program_icon');
 						?>
-					<div class="page-header">
+					<div id="ls-page-header" class="page-header">
 						<div class="container">
-							<?php the_title( '<h1 class="mod-header">', '</h1>' ); ?>
+							<?php the_title( '<h2 id="ls-page-header" class="mod-header">', '</h2>' ); ?>
 						</div>
 					</div>
 
-						<?php get_template_part( 'template-parts/content', 'page' ); ?>
-<!-- 						<h1 class="mod-header" style="text-align: center">Loan Scenario</h1>
- -->					
+						<?php get_template_part( 'template-parts/content-ls', 'page' ); ?>
+		
 					<article class="loan-scenario">
 						<?php echo wp_get_attachment_image($featured_image, "full") ?>
 

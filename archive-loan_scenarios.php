@@ -36,21 +36,23 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 
 					<div class="page-header">
 						<div class="container">
-							<?php the_title( '<h1 class="mod-header">', '</h1>' ); ?>
+							<a href="<?php the_permalink() ?>">
+								<?php the_title( '<h2 class="mod-header ls-title-header">', '</h2>' ); ?>
+							</a>
 						</div>
 					</div>
 
-						<?php get_template_part( 'template-parts/content', 'page' ); ?>
-					<article class="loan-scenario">
+					<article id="loan-scenario-archive" class="loan-scenario">
 					
 						<!-- Title and image section -->
-						<a href="<?php the_permalink() ?>"><h3 class="mod-header">Family owned <?php echo $business_type; ?> gets a <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3></a>
-						<div class="scenario-image"><?php echo wp_get_attachment_image($featured_image, "medium") ?></div>
+						<h3 class="mod-header">Family owned <?php echo $business_type; ?> gets a <?php echo $loan_type; ?> at <?php echo $loan_rate ?> rate</h3>
+						<div>
+							<div id="photo-archive"><?php echo wp_get_attachment_image($featured_image, "medium") ?></div>
+							<div id="story-archive"><?php the_excerpt() ?></div>
+						</div>
+						<h3 id="closing-title-archive" class="mod-header"><?php echo $loan_type ?></h3>
+						
 
-						<!-- Business story and closing highlights section -->
-						<p id="story"><?php echo $business_story ?></p>
-						<h3 class="mod-header">Closing Highlights</h3>
-						<div id="closing-highlights"><?php echo $closing_highlights ?></div>
 						
 					</article>
 					<?php endwhile; // End of the loop. ?>
