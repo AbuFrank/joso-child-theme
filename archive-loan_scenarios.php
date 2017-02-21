@@ -52,6 +52,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 						</div>
 						<h3 id="closing-title-archive" class="mod-header"><?php echo $loan_type ?></h3>
 						
+
 						
 					</article>
 					<?php endwhile; // End of the loop. ?>

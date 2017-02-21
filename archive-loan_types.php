@@ -9,7 +9,6 @@
 
 get_header();
 
-$layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 ?>
 
 	<div id="content" class="site-content">
@@ -37,7 +36,7 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 
-						<article>
+						<article class="loan-type-large">
 								<div class = "loan-type wow slideInUp" style = "visibility: visible; animation-name: slideInUp;">
 									<?php if ($count % 2 == 0) { ?>
 										<div class = "loan-type-media icon-left">

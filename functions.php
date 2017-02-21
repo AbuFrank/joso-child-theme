@@ -77,7 +77,35 @@ function create_custom_post_types(){
       'slug' => 'loan-types'
       ),
     )      
+  );
+
+  register_post_type('closings', 
+    array(
+    'labels' => array(
+      'name' => __('Closings'),
+      'singular_name' => __('Closing'),
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array (
+      'slug' => 'closings'
+      ),
+    )      
   );    
+
+  register_post_type('qa', 
+    array(
+    'labels' => array(
+      'name' => __('Questions and Answers'),
+      'singular_name' => __('qa'),
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array (
+      'slug' => 'q-a'
+      ),
+    )      
+  ); 
 }
 
 // Hook this custom post type function into the theme
