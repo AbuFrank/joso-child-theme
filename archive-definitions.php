@@ -1,8 +1,6 @@
 <?php
 /**
- * The template for displaying question and answers.
- *
- * This is the template that displays questions and answers by default.
+ * The template for displaying definitions.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -23,45 +21,35 @@ $layout = get_theme_mod( 'onepress_layout', 'right-sidebar' );
 				<main id="main" class="site-main" role="main">
 
 					<div id="qa-title">
-						<h1>Frequently Asked Questions</h1>
+						<h1>Definitions</h1>
 					</div>
 
 					<?php $count = 0; ?>
+					<div class = "definitions-container">
 					<?php while ( have_posts() ) : the_post();
 						// Add variables from q/a ACF
-							$question = get_field('question');
-							$answer = get_field('answer');			
+							$term = get_field('term');			
 					?>
-
-					<article class="question-answer">
-						
-						<input type="checkbox" value="selected" id="thisID<?php echo($count); ?>" class="question-input">
-
-						<!-- Question -->
-						<label for="thisID<?php echo($count); ?>" class="qa-question">
-							<div class="drop-down">
-								<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						<article class="definition-row<?php echo($count % 2) ?>">
+					
+							<!-- Term -->
+							<div class="fancy-term">
+								<p class="term-text">
+									<strong><?php the_title() ?></strong>
+								</p>
 							</div>
-							<h3 class = "noselect" id="question">
-							<?php echo $question ?>
-							</h3>
-						</label>
 
-						<!-- Answer -->
-						<section class="answer-box">
-							<div class="answer-under">
-							</div>
-							<div class="answer-over">
-								<h4 role="question-answer" class="qa-answer">
+							<!-- Definition -->
+							<div class="define-content">
+								<p class="content-text">
 								<?php the_content() ?>
-								</h4>
+								</p>
 							</div>
-						</section>
-
-					</article>
+						
+						</article>
 					<?php $count++; ?>
 					<?php endwhile; // End of the loop. ?>
-
+					</div>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 

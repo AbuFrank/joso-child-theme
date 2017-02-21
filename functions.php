@@ -85,7 +85,7 @@ function create_custom_post_types(){
     )      
   );    
 
-  register_post_type('qa', 
+  register_post_type('q_a', 
     array(
     'labels' => array(
       'name' => __('Questions and Answers'),
@@ -98,6 +98,20 @@ function create_custom_post_types(){
       ),
     )      
   ); 
+
+  register_post_type('definitions', 
+    array(
+    'labels' => array(
+      'name' => __('Definitions'),
+      'singular_name' => __('Definition'),
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'rewrite' => array (
+      'slug' => 'definitions'
+      ),
+    )      
+  );
 }
 
 // Hook this custom post type function into the theme
